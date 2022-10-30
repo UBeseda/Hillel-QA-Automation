@@ -6,7 +6,7 @@ public class Dog { //main class
     private String color;
     private double height;
 
-   // Констуктур приймає і передає 4 параметра
+   // 1 Конструктор приймає і передає 4 параметра
     public Dog(String name, int age, String color, double height) {
         this.name = name;
         if (age > 0 && age < 21) {
@@ -15,7 +15,7 @@ public class Dog { //main class
         this.color = color;
         this.height = height;
     }
-    // Конструктор 2 параметра - приймає і 2 параметра - задає значення за замовченням
+    // 2 Конструктор 2 параметра - приймає і 2 параметра - задає значення за замовченням
     public Dog(int age, double height) {
         this.name = "Bobik";
         if (age > 0 && age < 21) {
@@ -24,7 +24,7 @@ public class Dog { //main class
         this.color = "black"; //за замовченням
         this.height = height;
     }
-    // Конструктор без параметрів
+    // 3 Конструктор без параметрів
     public Dog() {
         System.out.println("Creating object of the class Dog");
     }
