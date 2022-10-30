@@ -22,7 +22,7 @@ public class lesson5 { //main
         System.out.println("\n"); // для красоти перенесення - щоб в консолі все не зліпалось
 
         // Другий конструктор
-        Dog dog1 = new Dog(1, 0.3);
+        Dog dog1 = new Dog("Bobik", 1);
         System.out.println("Name: " + dog1.getName() + "\n" + "Age: " + dog1.getAge() + "\n" + "Color: "
                 + dog1.getColor() + "\n" + "Height: " + dog1.getHeight());
         System.out.println("\n"); // для красоти перенесення - щоб в консолі все не зліпалось

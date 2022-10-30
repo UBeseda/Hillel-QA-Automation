@@ -16,13 +16,13 @@ public class Dog { //main class
         this.height = height;
     }
     // 2 Конструктор 2 параметра - приймає і 2 параметра - задає значення за замовченням
-    public Dog(int age, double height) {
-        this.name = "Bobik";
+    public Dog(String name,int age) {
+        this.name = name;
         if (age > 0 && age < 21) {
             this.age = age;
         }
         this.color = "black"; //за замовченням
-        this.height = height;
+        this.height = 0.2; //за замовченням
     }
     // 3 Конструктор без параметрів
     public Dog() {
