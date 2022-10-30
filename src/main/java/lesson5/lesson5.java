@@ -22,4 +22,4 @@ public class lesson5 { //main
         // Третій конструктор
         Dog dog2 = new Dog();
     }// static
-} //main
+} //end of main

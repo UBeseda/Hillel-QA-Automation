@@ -71,4 +71,4 @@ public class Dog { //main class
         System.out.println("Color: " + color);
         System.out.println("Height: " + height);
     }
-} //main class
+} //end of main class
