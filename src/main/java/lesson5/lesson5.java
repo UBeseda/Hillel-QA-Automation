@@ -9,9 +9,11 @@ package lesson5;
 public class lesson5 { //main
     public static void main(String[] args) { //static
         // Перший конструктор -  приймає 4 параметра (GET) і встановлюе значення в 4 поля (SET)
+
         Dog dog = new Dog("Gavr", 7, "brown", 0.7); //
         dog.print(); // приймає і виводить 4 параметра з об'єкта
-        System.out.println("\n"); // для красоти перенесення - щоб в консолі все не зліпалось
+        // для красоти перенесення - щоб в консолі все не зліпалось
+        System.out.println("\n");
 
         dog.setName("Bublik"); //встановлює нове значення імені
         dog.setAge(3); // встановлює нове значення віку
@@ -19,15 +21,20 @@ public class lesson5 { //main
         dog.setHeight(0.9); //встановлює нове значення зросту
         System.out.println("Name: " + dog.getName() + "\n" + "Age: " + dog.getAge() + "\n" + "Color: "
                 + dog.getColor() + "\n" + "Height: " + dog.getHeight()); //виводить нові значення, де \n - перенесення на слід рядок
-        System.out.println("\n"); // для красоти перенесення - щоб в консолі все не зліпалось
+        // для красоти перенесення - щоб в консолі все не зліпалось
+        System.out.println("\n");
 
         // Другий конструктор
+
         Dog dog1 = new Dog("Bobik", 1);
         System.out.println("Name: " + dog1.getName() + "\n" + "Age: " + dog1.getAge() + "\n" + "Color: "
                 + dog1.getColor() + "\n" + "Height: " + dog1.getHeight());
-        System.out.println("\n"); // для красоти перенесення - щоб в консолі все не зліпалось
+        // для красоти перенесення - щоб в консолі все не зліпалось
+        System.out.println("\n");
 
         // Третій конструктор
+
         Dog dog2 = new Dog();
+
     }// static
 } //end of main
