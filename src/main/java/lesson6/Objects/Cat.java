@@ -23,4 +23,4 @@ public class Cat extends Animal {//main
         super(vegetarian, eats, noOfLegs);
         this.color = "white";
     }
-} //end of main.
+} //end of main

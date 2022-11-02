@@ -42,4 +42,4 @@ public class Animal { //main
     public Animal() {
     }
 
-} //end of main.
+} //end of main
