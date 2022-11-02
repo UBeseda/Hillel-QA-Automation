@@ -17,4 +17,4 @@ public class lesson6 { //main
         System.out.println("Vegetarian: " + cat1.isVegetarian() + "\n" + "Eats: " + cat1.getEats() + "\n"
                 + "noOfLegs: " + cat1.getNoOfLegs() + "\n" + "color: " + cat1.getColor());
  } //static
-} //end of main
+} //end of main.
