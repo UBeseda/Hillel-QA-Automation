@@ -12,7 +12,7 @@ import java.util.*;
 public class lesson9 {
 
     public static void main(String[] args) { //main
-       String str = "oil, oil, milk, milk, sausage";
+       String str = "oil, oil, sausage, milk";
        printExclusive(str);
     } //end of main
 
