@@ -9,8 +9,8 @@ public class FirstTest {
     static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
-        test1(); // run first test
-        driver.quit(); // don't forget to close driver in the end of test
+        test1(); // Run first test
+        driver.quit(); // Don't forget to close driver in the end of test
     }
 
     //The First test witch shows the page's title
