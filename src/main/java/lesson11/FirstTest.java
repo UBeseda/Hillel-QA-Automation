@@ -1,3 +1,5 @@
+// Написать метод который открывает страницу https://ithillel.ua/ и печатает в консоль тайтл страницы
+
 package lesson11;
 
 import org.openqa.selenium.WebDriver;
@@ -7,22 +9,22 @@ public class FirstTest {
     static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
-        test1(); // визвати перший тест
-        driver.quit(); // не забувати завжди закривати драйвер в кінці
+        test1(); // run first test
+        driver.quit(); // don't forget to close driver in the end of test
     }
 
-    //Перший тест, який виводить тайтл сторінки
+    //The First test witch shows the page's title
     public static void test1() {
         driver.get("https://ithillel.ua/");
         System.out.println(driver.getTitle());
 
-        try { // Початок метода затримки
+        try { // The beginning of delay
             Thread.sleep(500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }   // Кінець метода затримки
+        }   // The end of delay
 
-        if (!driver.getTitle().equals("Комп'ютерна школа Hillel у Києві: Курси IT-технологій")) { // Перевірка чи равен тайтл
+        if (!driver.getTitle().equals("Комп'ютерна школа Hillel у Києві: Курси IT-технологій")) { // Check if Title is right
             System.err.println("Test1 is Failed");
         }
     }
