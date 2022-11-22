@@ -2,27 +2,23 @@
 
 package lesson11;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import сonfig.BaseClass;
 
-public class FirstTest {
-    static WebDriver driver = new ChromeDriver();
+public class FirstTest extends BaseClass {
+
+    static {
+        BaseClass.createDriver();
+    }
 
     public static void main(String[] args) {
         test1(); // Run first test
-        driver.quit(); // Don't forget to close driver in the end of test
+        BaseClass.closeDriver(); // Don't forget to close driver in the end of test
     }
 
-    //The First test witch shows the page's title
+    //The First test that shows the page's title
     public static void test1() {
         driver.get("https://ithillel.ua/");
         System.out.println(driver.getTitle());
-
-        try { // The beginning of delay
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }   // The end of delay
 
         if (!driver.getTitle().equals("Комп'ютерна школа Hillel у Києві: Курси IT-технологій")) { // Check if Title is right
             System.err.println("Test1 is Failed");
