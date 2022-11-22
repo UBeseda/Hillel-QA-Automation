@@ -18,7 +18,7 @@ public class SecondTest extends BaseClass {
 
     public static void main(String[] args) {
         openPage(); // Run first test
-        prefillForm();
+        prefillForm(); //Run second test
         BaseClass.closeDriver(); // Don't forget to close driver in the end of all tests
     }
 
@@ -27,7 +27,7 @@ public class SecondTest extends BaseClass {
         driver.get("https://demoqa.com/automation-practice-form");
     }
 
-    //The Second test that opens page
+    //The Second test that prefill form
     private static void prefillForm() {
         User user = new User();
         By inputNameLocator = By.id("firstName");
